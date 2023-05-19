@@ -258,6 +258,7 @@ article p {
     align-items: center;
     padding: 20px 63px;
     border-radius: 2px;
+    text-align: center;
 }
 .cta{
     color: #ffffff;
@@ -458,6 +459,9 @@ input, textarea{
     font-weight: 600;
     font-size: 15px;
 }
+.mobile{
+    display: none;
+}
 @media all and (max-width: 1170px) {
     #about, #contact{
         flex-wrap: wrap;
@@ -472,15 +476,24 @@ input, textarea{
 }
 @media all and (max-width: 980px){
     .hero-heading{
-        /* width: 60%; */
         bottom: 10px;
         right: 10px;
     }
     .hero-heading img{
         width: 400px;
     }
+    .about-info{
+        padding: 0 20px;
+    }
+    #products, #testimonials, #blog{
+        padding: 60px 20px;
+    }
+    #contact{
+        padding: 0;
+    }
     .avatar, .cta-book{
         width: 100%;
+        padding: 20px;
     }
     .products-heading{
         flex-wrap: wrap;
@@ -494,17 +507,72 @@ input, textarea{
         left: 20px;
     }
     .author{
-        top: 14px;
+        top: 24px;
         left: 70px;
+        font-size:15px ;
     }
     .inline-list li{
         padding-bottom: 20px;
     }
-    #phrase{
-        font-size: 17px;
+    article p{
+        font-size: 13px;
+        padding: 0;
+    }
+    .quotes{
+        width: 36px;
+        height: 29px;
+    }
+    .quotes:first-of-type {
+        top: 20px;
+        left: 20px;
+    }
+    .quotes:last-of-type {
+        bottom: 20px;
+        right: 20px;
     }
     .blog-img-right, .blog-img-left{
         padding: 10px;
     }
-}
+    label, h3{
+        font-size: 16px;
+    }
+    .footer-container{
+        padding: 20px;
+    }
+    .rights{
+        text-align: center;
+        padding: 0 20px;
+    }
+    .name-rights{
+        font-size: 11px;
+    }
+    .footer-container p{
+        font-size: 18px;
+    }
+    .card{
+        height: auto;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .inline-list {
+        flex-direction: column;
+    }
+    .inline-list li{
+        text-align: start;
+    }
+    .mobile{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .desktop{
+        display: none;
+    }
 
+    }
+
+@media all and (max-width:390px) {
+    .hero-heading img{
+        width: 300px;
+    }
+
+}
