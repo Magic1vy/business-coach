@@ -173,7 +173,6 @@ header{
     border-image-source: linear-gradient(180deg, #ffffff, #C60012);
     border-image-slice: 1;
 }
-
 .accordion.active::after {
     color: rgba(0, 0, 0, 0.2);
     -webkit-background-clip: initial;
@@ -191,7 +190,6 @@ h3{
     font-weight: 400;
     text-align: center;
 }
-
 .about-text, .about-list, .products-text{
     line-height: 180%;
     font-weight: 300;
@@ -212,8 +210,6 @@ ul.about-list{
     text-transform: uppercase;
     font-weight: bold;
 }
-
-
 article{
     background-color: #ffffff;
     color: #000000;
@@ -242,9 +238,6 @@ article p {
     font-size: 25px;
     padding: 0 150px;
 }
-
-
-
 .products-heading{
     display: flex;
     justify-content: space-between;
@@ -258,6 +251,7 @@ article p {
     align-items: center;
     padding: 20px 63px;
     border-radius: 2px;
+    text-align: center;
 }
 .cta{
     color: #ffffff;
@@ -305,7 +299,6 @@ h4{
 .inline-list li{
     padding-right: 20px;
 }
-
 .testimonials{
     display: flex;
     flex-wrap: wrap;
@@ -322,20 +315,16 @@ h4{
     position: absolute;
     text-align: center;
 }
-
 .testimonial-content h5 {
     margin-top: 25px;
     font-size: 33px;
 }
-
 .testimonial-content p {
     font-size: 12px;
     padding: 20px;
     letter-spacing: .5px;
     line-height: 160%;
 }
-
-
 .blog-content{
     margin: 30px 0;
 }
@@ -365,9 +354,6 @@ h6{
     float: right;
     padding-left: 30px ;
 }
-
-
-
 .contacts-container{
     padding: 70px 30px;
     margin: auto;
@@ -458,6 +444,9 @@ input, textarea{
     font-weight: 600;
     font-size: 15px;
 }
+.mobile{
+    display: none;
+}
 @media all and (max-width: 1170px) {
     #about, #contact{
         flex-wrap: wrap;
@@ -472,15 +461,24 @@ input, textarea{
 }
 @media all and (max-width: 980px){
     .hero-heading{
-        /* width: 60%; */
         bottom: 10px;
         right: 10px;
     }
     .hero-heading img{
         width: 400px;
     }
+    .about-info{
+        padding: 0 20px;
+    }
+    #products, #testimonials, #blog{
+        padding: 60px 20px;
+    }
+    #contact{
+        padding: 0;
+    }
     .avatar, .cta-book{
         width: 100%;
+        padding: 20px;
     }
     .products-heading{
         flex-wrap: wrap;
@@ -494,17 +492,70 @@ input, textarea{
         left: 20px;
     }
     .author{
-        top: 14px;
+        top: 24px;
         left: 70px;
+        font-size:15px ;
     }
     .inline-list li{
         padding-bottom: 20px;
     }
     article p{
         font-size: 13px;
+        padding: 0;
+    }
+    .quotes{
+        width: 36px;
+        height: 29px;
+    }
+    .quotes:first-of-type {
+        top: 20px;
+        left: 20px;
+    }
+    .quotes:last-of-type {
+        bottom: 20px;
+        right: 20px;
     }
     .blog-img-right, .blog-img-left{
         padding: 10px;
     }
-}
+    label, h3{
+        font-size: 16px;
+    }
+    .footer-container{
+        padding: 20px;
+    }
+    .rights{
+        text-align: center;
+        padding: 0 20px;
+    }
+    .name-rights{
+        font-size: 11px;
+    }
+    .footer-container p{
+        font-size: 18px;
+    }
+    .card{
+        height: auto;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .inline-list {
+        flex-direction: column;
+    }
+    .inline-list li{
+        text-align: start;
+    }
+    .mobile{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .desktop{
+        display: none;
+    }
+    }
 
+@media all and (max-width:390px) {
+    .hero-heading img{
+        width: 300px;
+    }
+}
