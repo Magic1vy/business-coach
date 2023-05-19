@@ -500,8 +500,8 @@ input, textarea{
     .inline-list li{
         padding-bottom: 20px;
     }
-    #phrase{
-        font-size: 17px;
+    article p{
+        font-size: 13px;
     }
     .blog-img-right, .blog-img-left{
         padding: 10px;
