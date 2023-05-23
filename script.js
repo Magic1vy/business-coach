@@ -60,6 +60,6 @@ for (i = 0; i < accordion.length; i++) {
 AOS.init({
     duration: 2000,
     easing: 'ease-in-out',
-  });
-  
+});
+
 
