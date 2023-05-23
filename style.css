@@ -418,6 +418,7 @@ input, textarea{
     align-items: center;
     font-size: 17px;
     cursor: pointer;
+    margin-top: 20px;
 }
 .submit img{
     width: 20px;
@@ -611,6 +612,10 @@ input, textarea{
     }
     .desktop{
         display: none;
+    }
+    .fade-left-mobile {
+        opacity: 0;
+        transform: translateX(-100%);
     }
     }
 
