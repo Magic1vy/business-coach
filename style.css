@@ -484,9 +484,8 @@ input, textarea{
 .mobile{
     display: none;
 }
-<<<<<<< HEAD
 
-#cookieConsentPopup {
+/* #cookieConsentPopup {
     position: fixed;
     bottom: 5px;
     right: 5px;
@@ -500,16 +499,13 @@ input, textarea{
 }
 
 #cookieConsentPopup button {
-    /* color: #000000; */
     background-color: #ffffff;
     padding: 5px 10px;
     margin-left: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-=======
->>>>>>> 21c136afb25f9ee4cdb45a4faf202ad594e8f005
+}  */
 @media all and (max-width: 1170px) {
     #about, #contact{
         flex-wrap: wrap;
@@ -615,18 +611,10 @@ input, textarea{
     .desktop{
         display: none;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 21c136afb25f9ee4cdb45a4faf202ad594e8f005
     }
 
 @media all and (max-width:390px) {
     .hero-heading img{
         width: 300px;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 21c136afb25f9ee4cdb45a4faf202ad594e8f005
 }
