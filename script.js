@@ -1,3 +1,26 @@
+
+// function closePopupAndSetCookie() {
+//     document.getElementById('cookieConsentPopup').style.display = 'none';
+
+//     let date = new Date();
+//     date.setFullYear(date.getFullYear() + 1); // Срок действия cookie - 1 год
+//     document.cookie = "cookieConsent=true; expires=" + date.toUTCString() + "; path=/";
+// }
+
+// function declineAndSetCookie() {
+//     document.getElementById('cookieConsentPopup').style.display = 'none';
+
+//     let date = new Date();
+//     date.setFullYear(date.getFullYear() + 1); // Срок действия cookie - 1 год
+//     document.cookie = "declineCookieConsent=true; expires=" + date.toUTCString() + "; path=/";
+// }
+
+// window.onload = function() {
+//     if (document.cookie.indexOf('cookieConsent=true') === -1 && document.cookie.indexOf('declineCookieConsent=true') === -1) {
+//         document.getElementById('cookieConsentPopup').style.display = 'block';
+//     }
+// }
+
 const menuBtn = document.getElementById('menuBtn');
 const sidenav = document.getElementById('mySidenav');
 const closeBtn = document.getElementById('closeBtn');
@@ -34,5 +57,9 @@ for (i = 0; i < accordion.length; i++) {
     });
 }
 
-
+AOS.init({
+    duration: 2000,
+    easing: 'ease-in-out',
+  });
+  
 

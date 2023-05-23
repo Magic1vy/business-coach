@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anastasiia Nagovitsyna is an experienced business coach committed to helping entrepreneurs and businesses grow. She offers personalized coaching sessions, actionable insights, and practical strategies to overcome business challenges and achieve success.">
+    <meta name="author" content="<a href='https://valeriia-code.com/'>Valeriia Isaienko</a>">
     <title>Anastasiia Nagovitsyna - business coach</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,11 +24,11 @@
             
             <nav id="mySidenav" class="sidenav">
                 <button class="closebtn" id="closeBtn">&times;</button>
-                <a href="#about">Who is Anastasiia?</a>
+                <a href="#about"><nobr>Who is Anastasiia?</nobr></a>
                 <a href="#products">Products</a>
                 <a href="#testimonials">Testimonials</a>
                 <a href="#blog">Blog</a>
-                <a href="#contacts">Contacts</a>
+                <a href="#contact">Contacts</a>
             </nav>
             <p class="author">Anastasiia Nagovitsyna</p>
         </div>
@@ -34,6 +37,12 @@
             <img  src="./assets/coach.png" alt="text:Your Business Coach">
         </div>
     </header>
+    <!-- <div id="cookieConsentPopup">
+            This site use cookies for Google Analytics.
+            By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+            <button onclick="closePopupAndSetCookie()">✅</button>
+            <button onclick="declineAndSetCookie()">❌</button>
+        </div> -->
     <main>
         <section id="about">
             <div class="about-info">
@@ -65,7 +74,7 @@
                 </ul>
                 </div>
             </div>
-            <div>
+            <div  data-aos="fade-left">
                 <img class="avatar" src="./assets/Anastasiia.jpg" alt="Anastasiia">
             </div>
         </section>
@@ -260,7 +269,7 @@
         </section>
 
         <section id="contact">
-            <div>
+            <div data-aos="fade-right">
                 <img  class="avatar"  src="./assets/avatar.jpg" alt="Anastasiia">
             </div>
             <div class="contacts-container">
@@ -268,14 +277,12 @@
                 <h3>If you have any questions don't hesitate use the form!</h3>
                 <form action="https://formspree.io/f/mknargvo"
                 method="POST">
-                    <label for="name">Your Name:</label>
-                    <input type="text" name="name" placeholder="John Doe">
-
-                    <label for="email">Your Email:</label>
-                    <input type="text" name="email" placeholder="youremail@example">
-
-                    <label for="comment">Your  Comment:</label>
-                    <textarea placeholder="Type here..."></textarea>
+                    <label>Your Name:</label>
+                        <input type="text" name="name" placeholder="John Doe" autocomplete="name">
+                    <label>Your Email:</label>
+                        <input type="email" name="email" placeholder="youremail@example" autocomplete="email">
+                    <label>Your  Comment:</label>
+                        <textarea name="comment" placeholder="Type here..." autocomplete="off"></textarea>
                     <div class="cta-container cta-book">
                         <button class="cta submit">
                             <img src="./assets/send.png" alt="send icon">
@@ -290,7 +297,7 @@
             <div class="footer-container">
                 <p>Anastasiia Nagovitsyna</p>
             <div class="social">
-                    <a class="social-icon" href="https://www.instagram.com/anastasiia.balance/" target="_blank">
+                    <a class="social-icon" href="https://www.instagram.com/anastasiia.balance/" target="_blank" title="@anastasiia.balance">
                         <svg class="social" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.0525 8.28711C12.2118 8.28711 8.29028 12.2105 8.29028 17.0493C8.29028 21.8901 12.2118 25.8134 17.0525 25.8134C21.8894 25.8134 25.8147 21.8901 25.8147 17.0493C25.8147 12.2105 21.8894 8.28711 17.0525 8.28711ZM17.0525 22.743C13.9081 22.743 11.3589 20.1937 11.3589 17.0512C11.3589 13.9068 13.9081 11.3595 17.0525 11.3595C20.1969 11.3595 22.7424 13.9068 22.7424 17.0512C22.7424 20.1937 20.1969 22.743 17.0525 22.743Z" fill="black"/>
                             <path d="M26.1634 10.0078C27.2919 10.0078 28.2066 9.093 28.2066 7.96458C28.2066 6.83615 27.2919 5.92139 26.1634 5.92139C25.035 5.92139 24.1202 6.83615 24.1202 7.96458C24.1202 9.093 25.035 10.0078 26.1634 10.0078Z" fill="black"/>
@@ -298,14 +305,14 @@
                         </svg>
                     </a>
 
-                    <a class="social-icon" href="tel:+14374297007">
+                    <a class="social-icon" href="tel:+14374297007" title="+14374297007">
                         <svg  class="social" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.233 32.9325L23.4994 32.9325C24.358 32.9325 24.4221 32.5325 25.0368 31.9178L29.4336 27.5212C30.0694 26.8854 30.0694 26.7531 29.4336 26.1173L23.1202 19.8039C22.4844 19.1681 22.7414 18.9427 22.1056 19.5785L18.9708 22.6661C17.7691 22.3083 14.5076 21.2251 13.0865 19.8039C11.6653 18.3828 10.6257 15.3975 10.268 14.1959L12.8606 11.3485C13.4964 10.7127 13.4964 10.3356 12.8606 9.69981L6.77206 3.68225C6.16229 3.07247 6.36819 3.07247 5.75842 3.68225L1.36159 7.90446C0.743687 8.52236 0.72309 8.79897 0.736099 9.66566C0.773499 11.9812 0.772876 19.3788 7.11128 25.7172C13.4497 32.0556 20.9175 32.8951 23.233 32.9325ZM6.29563 6.4054L10.5006 10.6104L8.39813 12.7129C8.0095 13.0999 7.84364 13.6593 7.95746 14.1959C7.99649 14.3829 8.95099 18.8172 11.6503 21.5164C14.3495 24.2157 18.7838 25.1702 18.9708 25.2092C19.5123 25.323 20.0668 25.1572 20.4538 24.7686L22.5563 22.6661L26.7613 26.8711L23.4994 30.1313C21.4701 30.0972 14.5268 29.5524 9.07132 24.0954C3.59798 18.622 3.06788 11.6543 3.03536 9.66566L6.29563 6.4054ZM29.7715 14.9562L32.3029 15.4967C32.3029 7.15502 26.0052 0.86377 17.6521 0.86377V2.95652C23.7043 2.07716 30.2085 7.73635 29.7715 14.9562Z" fill="black"/>
                             <path d="M17.3705 9.17898C20.6399 8.48633 23.6839 11.4175 23.1602 14.9072H25.5008C25.5008 9.66316 22.6145 6.77689 17.3705 6.77689V9.17898Z" fill="black"/>
                         </svg>
                     </a>
 
-                    <a class="social-icon" href="mailto:anastasiia.business.coach@gmail.com" target="_blank">
+                    <a class="social-icon" href="mailto:anastasiia.business.coach@gmail.com" target="_blank" title="anastasiia.business.coach@gmail.com">
                         <svg class="social" width="41" height="32" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M37.6551 0.728027H3.94948C1.62619 0.728027 0.905151 0.887472 0.905151 3.21076V28.9024C0.905151 31.2257 1.62619 31.8352 3.94948 31.8352H37.6509C39.9742 31.8352 40.3368 31.2257 40.3368 28.9024V3.62631C40.3368 1.30302 39.9784 0.728027 37.6551 0.728027ZM37.6509 3.62631V6.27767L20.8002 18.9834L3.94948 6.27767V3.62631H37.6509ZM3.94948 28.9024V10.038L19.5069 22.1389C19.886 22.4359 20.3431 22.5834 20.8002 22.5834C21.2573 22.5834 21.7143 22.4359 22.0935 22.1389L37.6509 10.038L37.6551 28.9024H3.94948Z" fill="black"/>
                         </svg>
@@ -317,6 +324,7 @@
             </div>
         </footer>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
