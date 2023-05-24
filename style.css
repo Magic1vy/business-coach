@@ -567,11 +567,11 @@ input, textarea{
         height: 29px;
     }
     .quotes:first-of-type {
-        top: 20px;
+        top: 10px;
         left: 20px;
     }
     .quotes:last-of-type {
-        bottom: 20px;
+        bottom: 10px;
         right: 20px;
     }
     .blog-img-right, .blog-img-left{
