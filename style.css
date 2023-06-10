@@ -692,8 +692,7 @@ body.modal-open {
 @media all and (max-width:500px){
     #cookieConsentPopup {
         bottom: 100px;
-        right: auto;
-        left: 30px;
+        right: 30px;
         top: auto;
     }
     .modal-content{
