@@ -1,3 +1,11 @@
+window.onload = function() {
+    if (document.cookie.indexOf('cookieConsent=true') === -1 && document.cookie.indexOf('declineCookieConsent=true') === -1) {
+        document.getElementById('cookieConsentPopup').style.display = 'block';
+    } else {
+        document.getElementById('cookieConsentPopup').style.display = 'none';
+        document.body.classList.remove('modal-open');
+    }
+};
 function closePopupAndSetCookie() {
     document.getElementById('cookieConsentPopup').style.display = 'none';
 
