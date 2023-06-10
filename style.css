@@ -472,6 +472,10 @@ input, textarea{
     align-items: center;
     padding: 20px;
 }
+.footer-rights a{
+    color: #ffffff;
+    font-weight: 400;
+}
 .rights{
     font-size: 12px;
     font-weight: 300;
