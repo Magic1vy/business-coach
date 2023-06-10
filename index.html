@@ -38,12 +38,39 @@
             <img  src="./assets/coach.png" alt="text:Your Business Coach">
         </div>
     </header>
-    <!-- <div id="cookieConsentPopup">
-            This site use cookies for Google Analytics.
-            By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
-            <button onclick="closePopupAndSetCookie()">✅ Accept</button>
-            <button onclick="declineAndSetCookie()">❌ Decline</button>
-        </div> -->
+        <div id="cookieConsentPopup">
+            <p>We use cookies on this website to enhance user interaction and provide a better experience.</p>
+            <div>
+                <button onclick="closePopupAndSetCookie()">✅ Accept</button>
+                <button onclick="declineAndSetCookie()">❌ Decline</button>
+            </div>
+            <a href="#" onclick="showCookiePolicy()">Cookie Policy</a>
+        </div>
+        <div id="cookiePolicyModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeCookiePolicyModal()">&times;</span>
+                <h3>Cookie Policy</h3>
+                <div id="cookiePolicyModalContent">
+                    <p>Welcome to our website! We would like to share detailed information about how we use cookies.</p>
+                    <ol>
+                        <li>What are cookies?</li>
+                        <p>Cookies are small text files that are stored on your computer or mobile device when you visit a website. They contain information about your activity on the site and allow us to enhance your experience by personalizing and adapting our content and functionality.</p>
+                        <li>What types of cookies do we use?</li>
+                        <ul>
+                            <li>Strictly necessary cookies: These cookies are essential for the basic functioning of our site and cannot be disabled in our settings. They are usually set only in response to your actions, such as requests for services, privacy preference settings, or form filling.</li>
+                            <li>Analytical cookies: These cookies allow us to collect information about how you interact with our website, such as which pages you visit and how much time you spend on them. This helps us analyze and improve the performance of our site.</li>
+                            <li>Functional cookies: These cookies enable the website to remember your preferences and choices to provide you with a more personalized experience. For example, they may remember your language preference or region.</li>
+                        </ul>
+                        <li>How can you manage cookies?</li>
+                        <p>If you want to change your cookie settings or opt out of their use, you can do so through your browser settings. Please note that disabling some cookies may affect the functionality and availability of certain features on our site.</p>
+                        <li>How do we handle personal data?</li>
+                        <p>We strictly adhere to our privacy policy and process personal data in accordance with applicable data protection laws. Please refer to our privacy policy for more information on how we process and protect your data.</p>
+                    </ol>
+                    <p>If you have any additional questions or require further information, feel free to contact us. We are always ready to assist and ensure a complete understanding of our cookie policy. Thank you for your attention, and enjoy your time on our website!</p>
+                </div>
+            </div>
+        </div>
+        
     <main>
         <section id="about">
             <div class="about-info">
@@ -74,8 +101,11 @@
                     <li class="about-list">Presenter at the scientific-practical conference: Global issues: meeting challenges of the modern world (2009)</li>
                 </ul>
                 </div>
+            </div> 
+            <div  data-aos="fade-left" class="fade-left-mobile desktop">
+                <img class="avatar" src="./assets/avatar-1.jpg" alt="Anastasiia">
             </div>
-            <div  data-aos="fade-left" class="fade-left-mobile">
+            <div class="mobile">
                 <img class="avatar" src="./assets/avatar-1.jpg" alt="Anastasiia">
             </div>
         </section>
@@ -270,7 +300,10 @@
         </section>
 
         <section id="contact">
-            <div data-aos="fade-right">
+            <div data-aos="fade-right" class="desktop">
+                <img  class="avatar"  src="./assets/avatar.jpg" alt="Anastasiia">
+            </div>
+            <div class="mobile">
                 <img  class="avatar"  src="./assets/avatar.jpg" alt="Anastasiia">
             </div>
             <div class="contacts-container">
@@ -321,7 +354,7 @@
                 </div>
             </div>
             <div class="footer-rights">
-                <p class="rights">© 2023 <span class="name-rights">ANASTASIIA NAGOVITSYNA</span>. All rights reserved.</p>
+                <p class="rights">© 2023 <span class="name-rights">ANASTASIIA NAGOVITSYNA</span>. All rights reserved.  Website development by <a href='https://valeriia-code.com/' target="_blank">Valeriia Code</a></p>
             </div>
         </footer>
     </main>
