@@ -31,7 +31,7 @@ h2{
     border-radius: 2px;
 }
 header{
-    background-image: url("./assets/hero.jpg");
+    background-image: url("./assets/SviY1NAc.jpg");
     background-position: top left;
     background-size: cover;
     min-height: 100vh;
@@ -614,9 +614,14 @@ input, textarea{
     .fade-left-mobile {
         opacity: 0;
         transform: translateX(-100%);
+        overflow: hidden;
     }
     }
-
+@media all and (max-width: 980px){
+    header{
+        background-image: url("/assets/SviY1NAc-mobile.jpg");
+    }
+}
 @media all and (max-width:390px) {
     .hero-heading img{
         width: 300px;
