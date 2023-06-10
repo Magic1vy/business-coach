@@ -501,6 +501,7 @@ input, textarea{
     text-align: center;
     border-radius: 5px;
     width: 300px;
+    display: none;
 }
 
 #cookieConsentPopup button {
