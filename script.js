@@ -1,9 +1,9 @@
 window.onload = function() {
-    if (!getCookie('cookieConsent') && !getCookie('declineCookieConsent')) {
-        document.getElementById('cookieConsentPopup').style.display = 'block';
-    } else {
+    if (getCookie('cookieConsent') || getCookie('declineCookieConsent')) {
         document.getElementById('cookieConsentPopup').style.display = 'none';
         document.body.classList.remove('modal-open');
+    } else {
+        document.getElementById('cookieConsentPopup').style.display = 'block';
     }
 };
 
